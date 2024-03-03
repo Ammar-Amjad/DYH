@@ -31,5 +31,18 @@ This repository contains:
 - Results of running the models.
 - Write-ups explaining cases of irreproducibility.
 
+## Recommendations for Reproducibility
+
+### Containerization and Detailed Methods
+- **Containerization**: We strongly advocate for the use of containerization tools such as Docker or Kubernetes. These tools can streamline the reproduction process by providing a consistent environment for running code.
+- **Method Detailing**: Authors should offer a clear method for labeling data clusters or provide a labeled dataset. This would significantly lower the barrier to entry for reproducing results.
+
+### Sample Data and Issues Tab
+- **Sample Data Sets**: Including smaller sample data sets in papers can enable quick validation of code and methods without extensive computation or data wrangling.
+- **GitHub Issues Tab**: Before attempting to reproduce results, we recommend visiting the paper's GitHub Issues tab for insights into common problems and solutions others have encountered, potentially saving significant time.
+  - DeepCASE example: [DeepCASE Issues](https://github.com/Thijsvanede/DeepCASE/issues?q=is%3Aissue+is%3Aclosed)
+  - Whisper example: [Whisper Issues](https://github.com/fuchuanpu/Whisper/issues)
+  - ContraNet example: [ContraNet Issues](https://github.com/cure-lab/ContraNet/issues)
+
 ## Related Work
 The project is inspired by and builds upon previous works that have tackled the reproducibility crisis, such as "Reproducing 150 Research Papers and Testing Them in the Real World: Challenges and Solutions" with Grigori Fursin.
