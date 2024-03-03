@@ -1,0 +1,36 @@
+install deepcase
+-> pip install deepcase
+
+install requirements
+-> pip install -r requirements.txt
+
+-> Create sequences
+python3 deepcase sequence --csv <path/to/file.csv> --save-sequences sequences.save
+
+-> train deepcase
+python3 deepcase train\
+     --load-sequences sequences.save\
+     --save-builder builder.save
+
+-> Create clusters of sequences
+python3 deepcase cluster\
+     --load-sequences sequences.save\
+     --load-builder builder.save\
+     --save-interpreter interpreter.save\
+     --save-clusters clusters.csv
+
+-> Run first time manual after manual labelling of clusters
+python3 deepcase manual\
+     --load-sequences sequences.save\
+     --load-builder builder.save\
+     --load-interpreter interpreter.save\
+     --load-clusters clusters.csv\
+     --save-interpreter interpreter_fitted.save
+
+-> Run afterwards in semi auto mode
+python3 deepcase automatic\
+     --load-sequences sequences.save\
+     --load-builder builder.save\
+     --load-interpreter interpreter_fitted.save\
+     --save-prediction prediction.csv
+     
