@@ -1,7 +1,7 @@
 # Do Your Homework: Ensuring Reproducibility in Deep Learning Research
 
 ## Abstract
-This repository hosts the project "Do Your Homework," which addresses the critical issue of reproducibility in scientific research, particularly within the field of computer network security. The project presents a framework of metrics to measure the reproducibility of Deep learning research papers, aiming to save researchers time by providing a streamlined method for assessing a paper's credibility based on code and data availability, as well as the ease of recreating results.
+This repository hosts the project "Do Your Homework," which addresses the critical issue of reproducibility in scientific research. The project presents a framework of metrics to measure the reproducibility of Deep learning research papers, aiming to save researchers time by providing a streamlined method for assessing a paper's credibility based on code and data availability, as well as the ease of recreating results.
 
 ## Introduction
 Reproducibility is the cornerstone of scientific credibility. Yet, the scientific community grapples with the challenge of irreproducible research. "Do Your Homework" introduces methodological improvements to the traditional paper review process, enhancing the efficiency of validating research findings by up to 80%.
